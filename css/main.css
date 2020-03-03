@@ -1,0 +1,170 @@
+:root {
+    --main-red-color: #FF0000;
+    --main-black-color: #3b3a37;
+    --main-text-color: white;
+    --main-second-text-color: #ff0000;
+}
+
+body {
+    background-color: var(--main-black-color);
+    padding: 0;
+    margin: 0;
+    color: var(--main-text-color);
+    font-size: 10px;
+}
+
+/* ## CSS ## */
+.content{
+    padding: 1em;
+}
+
+.nav > div>h1{
+    color: var(--main-text-color);
+}
+
+
+
+/* ### Font Size ### */
+h1{
+    color: var(--main-second-text-color);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+}
+h2{
+    color: var(--main-second-text-color);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+}
+h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* margin: 0; */
+}
+h4{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* margin: 0; */
+}
+h5{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* margin: 0; */
+}
+h6{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* margin: 0; */
+}
+
+/* ### layout ### */
+.w-100{
+    width: 100%!important;
+} 
+.h-100{
+    height: 100%!important;
+}
+
+.fixed{
+    position: fixed!important;
+}
+
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+
+.section{
+    padding: 0 0 0 1em;
+}
+
+.section-line{
+    border-left: 0.1em solid var(--main-text-color);
+    padding: 0 0 0 1em;
+    margin-bottom: 2em;
+}
+
+.no-margin{
+    margin: 0!important;
+}
+
+.grid{
+    display: inline-flex;
+}
+
+/* ## responsive css ## */
+/* #### Tablets & Desktop #### */
+@media screen and (min-device-width: 768px) {
+
+    /* some CSS here */
+    body{
+        font-size: 24px;
+    }
+    .img {
+        margin: -50 0px;
+        width: 200px;
+        border: 10px solid var(--main-red-color);
+        border-radius: 110px;
+    }
+
+    .nav {
+        height: 100px;
+        margin: 100px 0;
+        padding-left: 50px;
+        background-color: var(--main-red-color);
+    }
+
+    .side-bar {
+        margin-left: 100px;
+        margin-top: -100px;
+        z-index: -1;
+        background-color: var(--main-red-color);
+        width: 100px;
+        position: absolute;
+    }
+
+    .content{
+        margin: -75px 200px 0px 200px;
+    }
+
+    .nav > div>h1{
+        line-height: 0.8em;
+    }
+
+    .col-md-4{
+        width: 33.33%;
+    }
+}
+/* #### Mobile #### */
+@media screen and (max-device-width: 767px) {
+
+    /* some CSS here */
+    .img {
+        margin: -25 0px;
+        width: 100px;
+        border: 5px solid var(--main-red-color);
+        border-radius: 55px;
+    }
+
+    .nav {
+        height: 50px;
+        margin: 50px 0;
+        padding-left: 25px;
+        background-color: var(--main-red-color);
+    }
+
+    .side-bar {
+        margin-left: 50px;
+        margin-top: -50px;
+        z-index: -1;
+        background-color: var(--main-red-color);
+        width: 50px;
+        position: absolute;
+    }
+
+    .content{
+        margin-top: -25px;
+        margin: -50 100px 0 100px;
+    }
+
+    .col-sm-12{
+        width: 100%;
+    }
+}
